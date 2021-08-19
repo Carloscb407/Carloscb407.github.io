@@ -100,4 +100,25 @@ portfolio_section.onmouseover =function () {
     nav_hover_highlight(nav_portfolio);
 };
 portfolio_section.onmouseout =function () {nav_hover_default(nav_portfolio)};
+var experience_sections = document.getElementsByClassName("experience-main-sections");
+function foo(){
+    console.log('foo function');
+    console.log(experience_sections.length);
+    for(i =1; i < experience_sections.length; i++){
+        let element = experience_sections[i];
+        console.log(element.id + " " + i);
+        if(i > experience_sections.length /2){
+            element.style.marginTop = experience_sections[i - 2].offsetHeight + "px";
+        } else{
+            element.style.marginTop = experience_sections[i + 1].offsetHeight + "px";
+        }
+    }
+    // Array.from(experience_sections).forEach((element,index) => function (){
+    //     console.log("insife for" );
+    //     if(index !== 0){
+    //         console.log('inside if');
+    //         element.style.marginTop = experience_sections[index - 1].offsetHeight + "px";
+    //     }
+    // });
+}
 

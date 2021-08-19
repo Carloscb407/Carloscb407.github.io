@@ -245,7 +245,7 @@ h5{
 }
 
 #experience-main-left>section{
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 }
 
 #experience-main-left>section:first-child{
@@ -259,11 +259,11 @@ h5{
 }
 
 #experience-main-right>section{
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 }
 
 #experience-main-right>section:first-child{
-    margin-top: 7%;
+    /*margin-top: 7%;*/
 }
 
 .clearfix::after {
